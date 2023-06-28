@@ -17,7 +17,7 @@ function IniciarReconocimientoVoz(){
     }).then(function(){
         
         console.log("Reconocimiento de voz iniciardo");
-        artyom.say("Hola estimado cliente, Soy tu SmartOrder virtual. Bienvenido a la cevichería Sonia");
+        artyom.say("Hola estimado cliente, Soy tu SmartOrder virtual. Bienvenido a la cevichería Sonia");
         artyom.say("Puedes ver el menú con el botón, 'realiza tu pedido'");
 
     });
