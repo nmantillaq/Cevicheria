@@ -19,13 +19,13 @@ function startOneCommandArtyom(){
             name: "Microsoft Helena - Spanish (Spain)"
         }).then(function(){
 
-            "Hola bienvenidos "
+            hablar();
 
         });
     },250);
 }
 
 function hablar(){
-    artyom.say("Hola Bienvenidos");
+    artyom.say("Hola estimado cliente, Soy tu mesero virtual. Bienvenido a la cevichería Sonia");
 
 }
