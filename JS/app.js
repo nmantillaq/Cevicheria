@@ -26,6 +26,9 @@ function startOneCommandArtyom(){
 }
 
 function hablar(){
-    artyom.say("Hola estimado cliente, Soy tu mesero virtual. Bienvenido a la cevichería Sonia");
+    
+    debugger
+
+        artyom.say("Hola estimado cliente, Soy tu mesero virtual. Bienvenido a la cevichería Sonia");
 
 }
