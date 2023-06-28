@@ -1,11 +1,24 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    startOneCommandArtyom();
+
+    artyom = new Artyom();
+
+    artyom.initialize({
+        lang:"es-ES",// Más lenguajes son soportados, lee la documentación
+        continuous:false,// Reconoce 1 solo comando y basta de escuchar
+        listen:true, // Iniciar !
+        debug:true, // Muestra un informe en la consola
+        speed:1, // Habla normalmente
+        name: "Microsoft Helena - Spanish (Spain)"
+    });
+
+    //startOneCommandArtyom();
+    hablar();
 });
 
-var artyom = new Artyom();
+var artyom; // = new Artyom();
 
-
+/*
 function startOneCommandArtyom(){
     artyom.fatality();// Detener cualquier instancia previa
 
@@ -23,7 +36,7 @@ function startOneCommandArtyom(){
 
         });
     },250);
-}
+}*/
 
 function hablar(){
     
