@@ -1,47 +1,30 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
 
-    artyom = new Artyom();
+    IniciarReconocimientoVoz();
+});
+
+var artyom = new Artyom();
+
+function IniciarReconocimientoVoz(){
+    //artyom.fatality();// Detener cualquier instancia previa
 
     artyom.initialize({
         lang:"es-ES",// Más lenguajes son soportados, lee la documentación
         continuous:false,// Reconoce 1 solo comando y basta de escuchar
         listen:true, // Iniciar !
         debug:true, // Muestra un informe en la consola
-        speed:1, // Habla normalmente
-        name: "Microsoft Helena - Spanish (Spain)"
+        speed:1 // Habla normalmente
+    }).then(function(){
+        
+        console.log("Reconocimiento de voz iniciardo");
+        artyom.say("Hola estimado cliente, Soy tu SmartOrder virtual. Bienvenido a la cevichería Sonia");
+        artyom.say("Puedes ver el menú con el botón, 'realiza tu pedido'");
+
     });
+}
 
-    //startOneCommandArtyom();
-    hablar();
-});
-
-var artyom; // = new Artyom();
-
-/*
-function startOneCommandArtyom(){
-    artyom.fatality();// Detener cualquier instancia previa
-
-    setTimeout(function(){// Esperar 250ms para inicializar
-         artyom.initialize({
-            lang:"es-ES",// Más lenguajes son soportados, lee la documentación
-            continuous:false,// Reconoce 1 solo comando y basta de escuchar
-            listen:true, // Iniciar !
-            debug:true, // Muestra un informe en la consola
-            speed:1, // Habla normalmente
-            name: "Microsoft Helena - Spanish (Spain)"
-        }).then(function(){
-
-            console.log("Reconocimiento de voz iniciardo");
-
-        });
-    },250);
-}*/
 
 function hablar(){
-    
-    debugger
-
-        artyom.say("Hola estimado cliente, Soy tu mesero virtual. Bienvenido a la cevichería Sonia");
+    artyom.say("por favor espere, estoy preparando un menú especial para usted");
 
 }
