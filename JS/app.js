@@ -19,7 +19,8 @@ function startOneCommandArtyom(){
             name: "Microsoft Helena - Spanish (Spain)"
         }).then(function(){
 
-            hablar();
+            "Hola bienvenidos "
+
         });
     },250);
 }
