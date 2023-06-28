@@ -33,5 +33,15 @@ function hablar2(){
     console.log("Reconocimiento de voz iniciardo");
     artyom.say("Hola estimado cliente, Soy tu SmartOrder virtual. Bienvenido a la cevichería Sonia");
     artyom.say("Puedes ver el menú con el botón, 'realiza tu pedido'");
+    
+
+    artyom.say("un momento, estoy obteniendo la mejor opción para usted");
+    
+    setTimeout(() => {
+        window.location = "./carta.html";
+    }, 2000);
+
+
+    
 }
 
