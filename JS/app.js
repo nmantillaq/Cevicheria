@@ -19,7 +19,7 @@ function startOneCommandArtyom(){
             name: "Microsoft Helena - Spanish (Spain)"
         }).then(function(){
 
-            hablar();
+            console.log("Reconocimiento de voz iniciardo");
 
         });
     },250);
